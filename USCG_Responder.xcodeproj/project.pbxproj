@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		55552D8B0D7BDAAB479AFD4D /* libPods-USCG_Responder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 105E5BE17CF42F4F3097FED1 /* libPods-USCG_Responder.a */; };
+		9D3EB7AD220E628B00C57A6D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3EB7AC220E628B00C57A6D /* LoginViewController.swift */; };
+		9D3EB7AF220E644C00C57A6D /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3EB7AE220E644C00C57A6D /* SignupViewController.swift */; };
+		9D3EB7B1220E64A600C57A6D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3EB7B0220E64A600C57A6D /* HomeViewController.swift */; };
+		9D3EB7B3220E694D00C57A6D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3EB7B2220E694D00C57A6D /* ProfileViewController.swift */; };
 		BD1410CB218F627700467813 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1410CA218F627700467813 /* AppDelegate.swift */; };
-		BD1410CD218F627700467813 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1410CC218F627700467813 /* ViewController.swift */; };
+		BD1410CD218F627700467813 /* FourwayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1410CC218F627700467813 /* FourwayViewController.swift */; };
 		BD1410D0218F627700467813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1410CE218F627700467813 /* Main.storyboard */; };
 		BD1410D3218F627700467813 /* USCG_Responder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD1410D1218F627700467813 /* USCG_Responder.xcdatamodeld */; };
 		BD1410D5218F627700467813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD1410D4218F627700467813 /* Assets.xcassets */; };
@@ -28,9 +32,13 @@
 		105E5BE17CF42F4F3097FED1 /* libPods-USCG_Responder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-USCG_Responder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EDCA695CEB702CAB302F2F /* Pods-USCG_Responder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USCG_Responder.release.xcconfig"; path = "Pods/Target Support Files/Pods-USCG_Responder/Pods-USCG_Responder.release.xcconfig"; sourceTree = "<group>"; };
 		94FB6715083BEF144695DBFD /* Pods-USCG_Responder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USCG_Responder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-USCG_Responder/Pods-USCG_Responder.debug.xcconfig"; sourceTree = "<group>"; };
+		9D3EB7AC220E628B00C57A6D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9D3EB7AE220E644C00C57A6D /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		9D3EB7B0220E64A600C57A6D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9D3EB7B2220E694D00C57A6D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		BD1410C7218F627700467813 /* USCG_Responder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = USCG_Responder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD1410CA218F627700467813 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BD1410CC218F627700467813 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD1410CC218F627700467813 /* FourwayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourwayViewController.swift; sourceTree = "<group>"; };
 		BD1410CF218F627700467813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD1410D2218F627700467813 /* USCG_Responder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = USCG_Responder.xcdatamodel; sourceTree = "<group>"; };
 		BD1410D4218F627700467813 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,14 +106,18 @@
 			isa = PBXGroup;
 			children = (
 				BD1410CA218F627700467813 /* AppDelegate.swift */,
-				BD1410CC218F627700467813 /* ViewController.swift */,
+				BD1410CC218F627700467813 /* FourwayViewController.swift */,
 				BD585F0221AF6DF4004C003E /* DBInt.swift */,
 				BD585F0421AF7701004C003E /* CaseReport.swift */,
 				BD585F0621AF81C4004C003E /* SubmitViewController.swift */,
 				BD585F0921B323FF004C003E /* RetrievalViewController.swift */,
 				BD6844D921FB81160088CD5B /* QueryTableViewController.swift */,
 				BD6844DD21FB952F0088CD5B /* CaseReportCell.swift */,
+				9D3EB7AC220E628B00C57A6D /* LoginViewController.swift */,
+				9D3EB7AE220E644C00C57A6D /* SignupViewController.swift */,
 				BD1410CE218F627700467813 /* Main.storyboard */,
+				9D3EB7B2220E694D00C57A6D /* ProfileViewController.swift */,
+				9D3EB7B0220E64A600C57A6D /* HomeViewController.swift */,
 				BD1410D4218F627700467813 /* Assets.xcassets */,
 				BD1410D6218F627700467813 /* LaunchScreen.storyboard */,
 				BD1410D9218F627700467813 /* Info.plist */,
@@ -232,15 +244,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD1410CD218F627700467813 /* ViewController.swift in Sources */,
+				BD1410CD218F627700467813 /* FourwayViewController.swift in Sources */,
 				BD585F0521AF7701004C003E /* CaseReport.swift in Sources */,
+				9D3EB7AF220E644C00C57A6D /* SignupViewController.swift in Sources */,
 				BD1410CB218F627700467813 /* AppDelegate.swift in Sources */,
 				BD1410D3218F627700467813 /* USCG_Responder.xcdatamodeld in Sources */,
 				BD585F0721AF81C4004C003E /* SubmitViewController.swift in Sources */,
 				BD6844DE21FB952F0088CD5B /* CaseReportCell.swift in Sources */,
 				BD585F0A21B323FF004C003E /* RetrievalViewController.swift in Sources */,
 				BD6844DA21FB81160088CD5B /* QueryTableViewController.swift in Sources */,
+				9D3EB7AD220E628B00C57A6D /* LoginViewController.swift in Sources */,
+				9D3EB7B3220E694D00C57A6D /* ProfileViewController.swift in Sources */,
 				BD585F0321AF6DF4004C003E /* DBInt.swift in Sources */,
+				9D3EB7B1220E64A600C57A6D /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
