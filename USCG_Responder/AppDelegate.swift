@@ -7,8 +7,10 @@
 //
 
 import UIKit
-import CoreData
 import Firebase
+import CoreData
+import GoogleMaps
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         Database.database().isPersistenceEnabled = true
+        GMSServices.provideAPIKey("AIzaSyDn9Fv-o-jJENO9rm9Dy9tDCxWn_e3RU3M")
         return true
     }
 

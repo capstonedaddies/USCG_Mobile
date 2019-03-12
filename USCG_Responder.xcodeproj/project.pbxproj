@@ -14,12 +14,16 @@
 		BD1410D3218F627700467813 /* USCG_Responder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD1410D1218F627700467813 /* USCG_Responder.xcdatamodeld */; };
 		BD1410D5218F627700467813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD1410D4218F627700467813 /* Assets.xcassets */; };
 		BD1410D8218F627700467813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1410D6218F627700467813 /* LaunchScreen.storyboard */; };
+		BD22F3D522121434007F1084 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD22F3D422121434007F1084 /* SignInViewController.swift */; };
+		BD22F3D722121545007F1084 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD22F3D622121545007F1084 /* SignUpViewController.swift */; };
+		BD22F3D922124265007F1084 /* MaydayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD22F3D822124265007F1084 /* MaydayViewController.swift */; };
 		BD585EFF21AF6984004C003E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD585EFE21AF6983004C003E /* GoogleService-Info.plist */; };
 		BD585F0121AF69A1004C003E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BD585F0021AF69A1004C003E /* Podfile */; };
 		BD585F0321AF6DF4004C003E /* DBInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD585F0221AF6DF4004C003E /* DBInt.swift */; };
 		BD585F0521AF7701004C003E /* CaseReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD585F0421AF7701004C003E /* CaseReport.swift */; };
 		BD585F0721AF81C4004C003E /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD585F0621AF81C4004C003E /* SubmitViewController.swift */; };
 		BD585F0A21B323FF004C003E /* RetrievalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD585F0921B323FF004C003E /* RetrievalViewController.swift */; };
+		BD63D8E7221E65550071A354 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD63D8E6221E65550071A354 /* MapViewController.swift */; };
 		BD6844DA21FB81160088CD5B /* QueryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6844D921FB81160088CD5B /* QueryTableViewController.swift */; };
 		BD6844DE21FB952F0088CD5B /* CaseReportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6844DD21FB952F0088CD5B /* CaseReportCell.swift */; };
 /* End PBXBuildFile section */
@@ -36,12 +40,16 @@
 		BD1410D4218F627700467813 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD1410D7218F627700467813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD1410D9218F627700467813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD22F3D422121434007F1084 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		BD22F3D622121545007F1084 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		BD22F3D822124265007F1084 /* MaydayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaydayViewController.swift; sourceTree = "<group>"; };
 		BD585EFE21AF6983004C003E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BD585F0021AF69A1004C003E /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BD585F0221AF6DF4004C003E /* DBInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBInt.swift; sourceTree = "<group>"; };
 		BD585F0421AF7701004C003E /* CaseReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseReport.swift; sourceTree = "<group>"; };
 		BD585F0621AF81C4004C003E /* SubmitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
 		BD585F0921B323FF004C003E /* RetrievalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrievalViewController.swift; sourceTree = "<group>"; };
+		BD63D8E6221E65550071A354 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		BD6844D921FB81160088CD5B /* QueryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryTableViewController.swift; sourceTree = "<group>"; };
 		BD6844DD21FB952F0088CD5B /* CaseReportCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseReportCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,12 +107,16 @@
 			children = (
 				BD1410CA218F627700467813 /* AppDelegate.swift */,
 				BD1410CC218F627700467813 /* ViewController.swift */,
-				BD585F0221AF6DF4004C003E /* DBInt.swift */,
-				BD585F0421AF7701004C003E /* CaseReport.swift */,
+				BD22F3D422121434007F1084 /* SignInViewController.swift */,
+				BD22F3D622121545007F1084 /* SignUpViewController.swift */,
+				BD22F3D822124265007F1084 /* MaydayViewController.swift */,
+				BD63D8E6221E65550071A354 /* MapViewController.swift */,
 				BD585F0621AF81C4004C003E /* SubmitViewController.swift */,
 				BD585F0921B323FF004C003E /* RetrievalViewController.swift */,
 				BD6844D921FB81160088CD5B /* QueryTableViewController.swift */,
 				BD6844DD21FB952F0088CD5B /* CaseReportCell.swift */,
+				BD585F0421AF7701004C003E /* CaseReport.swift */,
+				BD585F0221AF6DF4004C003E /* DBInt.swift */,
 				BD1410CE218F627700467813 /* Main.storyboard */,
 				BD1410D4218F627700467813 /* Assets.xcassets */,
 				BD1410D6218F627700467813 /* LaunchScreen.storyboard */,
@@ -232,14 +244,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD22F3D722121545007F1084 /* SignUpViewController.swift in Sources */,
 				BD1410CD218F627700467813 /* ViewController.swift in Sources */,
 				BD585F0521AF7701004C003E /* CaseReport.swift in Sources */,
 				BD1410CB218F627700467813 /* AppDelegate.swift in Sources */,
 				BD1410D3218F627700467813 /* USCG_Responder.xcdatamodeld in Sources */,
+				BD22F3D922124265007F1084 /* MaydayViewController.swift in Sources */,
+				BD63D8E7221E65550071A354 /* MapViewController.swift in Sources */,
 				BD585F0721AF81C4004C003E /* SubmitViewController.swift in Sources */,
 				BD6844DE21FB952F0088CD5B /* CaseReportCell.swift in Sources */,
 				BD585F0A21B323FF004C003E /* RetrievalViewController.swift in Sources */,
 				BD6844DA21FB81160088CD5B /* QueryTableViewController.swift in Sources */,
+				BD22F3D522121434007F1084 /* SignInViewController.swift in Sources */,
 				BD585F0321AF6DF4004C003E /* DBInt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
