@@ -26,6 +26,8 @@
 		BD63D8E7221E65550071A354 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD63D8E6221E65550071A354 /* MapViewController.swift */; };
 		BD6844DA21FB81160088CD5B /* QueryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6844D921FB81160088CD5B /* QueryTableViewController.swift */; };
 		BD6844DE21FB952F0088CD5B /* CaseReportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6844DD21FB952F0088CD5B /* CaseReportCell.swift */; };
+		BD8131C92241BCC4003B929D /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8131C82241BCC4003B929D /* EditorViewController.swift */; };
+		BD8131CB2241C9A7003B929D /* EditableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8131CA2241C9A7003B929D /* EditableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		BD63D8E6221E65550071A354 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		BD6844D921FB81160088CD5B /* QueryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryTableViewController.swift; sourceTree = "<group>"; };
 		BD6844DD21FB952F0088CD5B /* CaseReportCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseReportCell.swift; sourceTree = "<group>"; };
+		BD8131C82241BCC4003B929D /* EditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewController.swift; sourceTree = "<group>"; };
+		BD8131CA2241C9A7003B929D /* EditableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 				BD1410D9218F627700467813 /* Info.plist */,
 				BD1410D1218F627700467813 /* USCG_Responder.xcdatamodeld */,
 				BD585EFE21AF6983004C003E /* GoogleService-Info.plist */,
+				BD8131C82241BCC4003B929D /* EditorViewController.swift */,
+				BD8131CA2241C9A7003B929D /* EditableViewController.swift */,
 			);
 			path = USCG_Responder;
 			sourceTree = "<group>";
@@ -251,12 +257,14 @@
 				BD1410D3218F627700467813 /* USCG_Responder.xcdatamodeld in Sources */,
 				BD22F3D922124265007F1084 /* MaydayViewController.swift in Sources */,
 				BD63D8E7221E65550071A354 /* MapViewController.swift in Sources */,
+				BD8131CB2241C9A7003B929D /* EditableViewController.swift in Sources */,
 				BD585F0721AF81C4004C003E /* SubmitViewController.swift in Sources */,
 				BD6844DE21FB952F0088CD5B /* CaseReportCell.swift in Sources */,
 				BD585F0A21B323FF004C003E /* RetrievalViewController.swift in Sources */,
 				BD6844DA21FB81160088CD5B /* QueryTableViewController.swift in Sources */,
 				BD22F3D522121434007F1084 /* SignInViewController.swift in Sources */,
 				BD585F0321AF6DF4004C003E /* DBInt.swift in Sources */,
+				BD8131C92241BCC4003B929D /* EditorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

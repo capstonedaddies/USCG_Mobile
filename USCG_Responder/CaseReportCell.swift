@@ -29,7 +29,7 @@ class CaseReportCell:UITableViewCell{
         submitterText.text = report["subFirst"]
         perpText.text = report["perpFirst"]
         regionText.text = report["region"]
-        timestampText.text = report["timestamp"]
+        timestampText.text = "FIX ME PLS"
         idText.text = report["id"]
     }
     

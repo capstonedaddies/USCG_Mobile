@@ -13,7 +13,8 @@ struct CaseReport {
     var subFirst: String
     var subLast: String
     var region: String
-    var timestamp: String
+    var timestampAscending: String
+    var timestampDescending: String
     var vessel: String
     var perFirst: String
     var perLast: String
@@ -24,12 +25,13 @@ struct CaseReport {
     var notes: String
     var imagePath: String
     
-    init(id: String, subFirst: String = "", subLast: String = "", region: String = "", timestamp: String = "", vessel: String = "", perFirst: String = "", perLast: String = "", DOB: String = "", citizenship: String = "", intLat: String = "", intLon: String = "", notes: String = "", imagePath: String = ""){
+    init(id: String, subFirst: String = "", subLast: String = "", region: String = "", timestampAscending: String = "", timestampDescending: String = "", vessel: String = "", perFirst: String = "", perLast: String = "", DOB: String = "", citizenship: String = "", intLat: String = "", intLon: String = "", notes: String = "", imagePath: String = ""){
         self.id = id
         self.subFirst = subFirst
         self.subLast = subLast
         self.region = region
-        self.timestamp = timestamp
+        self.timestampAscending = timestampAscending
+        self.timestampDescending = timestampDescending
         self.vessel = vessel
         self.perFirst = perFirst
         self.perLast = perLast
@@ -47,7 +49,8 @@ struct CaseReport {
         "subFirst": subFirst,
         "subLast": subLast,
         "region": region,
-        "timestamp": timestamp,
+        "timestampAscending": timestampAscending,
+        "timestampDescending": timestampDescending,
         "vessel": vessel,
         "perFirst": perFirst,
         "perLast": perLast,
