@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class EditableViewController: UIViewController {
     
@@ -50,6 +51,32 @@ class EditableViewController: UIViewController {
     
     @IBAction func returnButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "unwindToEditor", sender: self)
+    }
+    @IBAction func saveButtonPressed(_ sender: Any) {
+         let ref: DatabaseReference = Database.database().reference(withPath: "case_reports")
+        
+        mainDic["id"] = self.idField.text
+        mainDic["perFirst"] = self.subFirstField.text
+        mainDic["perLast"] = self.subLastField.text
+        mainDic["citizenship"] = self.citField.text
+        mainDic["DOB"] = self.dobField.text
+        mainDic["vessel"] = self.vesselField.text
+        mainDic["region"] = self.regionField.text
+        mainDic["intLat"] = self.latField.text
+        mainDic["intLon"] = self.lonField.text
+        mainDic["timestampAscending"] = self.tsField.text
+        mainDic["subFirst"] = self.mitFirstField.text
+        mainDic["subLast"] = self.mitLastField.text
+        mainDic["notes"] = self.notedView.text
+        
+        let newref = ref.child("\(self.idField.text!)")
+        newref.updateChildValues(mainDic)
+    }
+    
+    @IBAction func deleteButtonPressed(_ sender: Any) {
+        let ref: DatabaseReference = Database.database().reference(withPath: "case_reports").child("\(self.idField.text!)")
+        ref.removeValue()
+        
     }
     
     /*

@@ -62,6 +62,22 @@ class SignUpViewController: UIViewController {
                     else{
                         self.messageLabel.isHidden = false
                         self.messageLabel.text = "Authentication email sent. Pleae check email and then try signing in."
+                        
+                        let myID = authResult?.user.uid
+                        
+                        let ref: DatabaseReference = Database.database().reference(withPath: "user_locations").child(myID!)
+                        
+                        let userCredentials = ["email":self.emailField.text!,
+                                               "firstName": self.firstNameField.text!,
+                                               "lastName": self.lastNameField.text!,
+                                               "DOB": "01/01/1990",
+                                               "Address": "123 Fake Street",
+                                               "Emergency Contact Name": "John Jacob",
+                                               "Emergency Contact": "1234567890",
+                                               "Vessel No": "jdhdha374298fufh83",
+                                               "Medical Notes": "Freckles"]
+                        
+                        ref.setValue(userCredentials);
                     }
                 }
             }

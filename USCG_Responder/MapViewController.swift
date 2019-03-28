@@ -9,8 +9,9 @@
 import UIKit
 import GoogleMaps
 import CoreLocation
+import Firebase
 
-class MapViewController: UIViewController, CLLocationManagerDelegate {
+class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     
 
     // **** INITIALIZE UI ELEMENTS ****
@@ -25,11 +26,14 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     var curLat:Double!
     var curLong:Double!
+    var curZoom:Float!
     
     
     // **** INIT LOCATION MANAGER ****
     var locationManager = CLLocationManager()
     var currentLocation: CLLocation?
+    
+    // fake location for init purposes
     // *******************************
     
     
@@ -44,13 +48,104 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         print(curLong)
         let camera = GMSCameraPosition.camera(withLatitude: curLat,
                                               longitude: curLong,
-                                              zoom: 6.0)
+                                              zoom: 10.0)
+        
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: curLat, longitude: curLong)
+        marker.title = "Your Location"
+        marker.map = mapper
+        
+        
+        self.populateNearby()
+        
+        
         if mapper.isHidden {
             mapper.isHidden = false
             mapper.camera = camera
         } else {
             mapper.animate(to: camera)
         }
+    }
+    
+    func populateNearby(){
+        
+        
+        let bobbyBoater = GMSMarker()
+        bobbyBoater.position = CLLocationCoordinate2D(latitude: curLat+0.1, longitude: curLong)
+        bobbyBoater.title = "bobbyBoater"
+        bobbyBoater.map = mapper
+        
+        let victorVessel = GMSMarker()
+        victorVessel.position = CLLocationCoordinate2D(latitude: curLat-0.1, longitude: curLong)
+        victorVessel.title = "victorVessel"
+        victorVessel.map = mapper
+        
+        let sallyShip = GMSMarker()
+        sallyShip.position = CLLocationCoordinate2D(latitude: curLat, longitude: curLong+0.1)
+        sallyShip.title = "sallyShip"
+        sallyShip.map = mapper
+        
+        let conradCaptain = GMSMarker()
+        conradCaptain.position = CLLocationCoordinate2D(latitude: curLat, longitude: curLong-0.1)
+        conradCaptain.title = "conradCaptain"
+        conradCaptain.map = mapper
+        
+        
+        
+    }
+    
+    /*
+    func callThisOnceAndThenFuckingDeleteIt(){
+        // start up that DB, BB
+        let ref: DatabaseReference = Database.database().reference()
+        
+        
+        var bobbysDic = Dictionary<String,String>()
+        bobbysDic["name"] = "Bobby Boater"
+        bobbysDic["lat"] = "21.2327778"
+        bobbysDic["lon"] = "-157.824444"
+        
+        ref.child("user_locations").child("bobbyBoater").setValue(bobbysDic)
+        
+        var vicsDic = Dictionary<String,String>()
+        vicsDic["name"] = "Victor Vessel"
+        vicsDic["lat"] = "21.1827778"
+        vicsDic["lon"] = "-157.824444"
+        
+        ref.child("user_locations").child("victorVeseel").setValue(vicsDic)
+        
+        var sallysDic = Dictionary<String,String>()
+        sallysDic["name"] = "Sally Ship"
+        sallysDic["lat"] = "21.2527778"
+        sallysDic["lon"] = "-157.924444"
+        
+        ref.child("user_locations").child("sallyShip").setValue(sallysDic)
+        
+        var conradsDic = Dictionary<String,String>()
+        conradsDic["name"] = "Conrad Captain"
+        conradsDic["lat"] = "21.2827778"
+        conradsDic["lon"] = "-157.724444"
+        
+        ref.child("user_locations").child("conradsCaptain").setValue(conradsDic)
+    }
+ */
+    
+    //Update changed zoomw when camera settles
+    func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
+        self.curZoom = mapView.camera.zoom
+        print(self.curZoom)
+        
+        print(mapView.camera.target)
+        let ne = mapView.cameraTargetBounds?.northEast
+        print(ne)
+        print(ne?.latitude)
+        print(ne?.longitude)
+        
+        
+        
+        let sw = mapView.cameraTargetBounds?.southWest
+        print(sw)
+        
     }
     
     // Handle authorization for the location manager.
@@ -90,32 +185,25 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.distanceFilter = 50
         locationManager.startUpdatingLocation()
         
-        let camera = GMSCameraPosition.camera(withLatitude: curLat,
-                                              longitude: curLong,
+        
+        
+        let camera = GMSCameraPosition.camera(withLatitude: 100.0,
+                                              longitude: 100.0,
                                               zoom: 6.0)
         mapper = GMSMapView.map(withFrame: sizingView.bounds, camera: camera)
         mapper.mapType = .satellite
         mapper.settings.myLocationButton = true
         mapper.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        mapper.delegate = self
         
         
         let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: curLat, longitude: curLong)
+        marker.position = CLLocationCoordinate2D(latitude: 100.0, longitude: 100.0)
         marker.title = "Your Location"
         marker.map = mapper
         sizingView.addSubview(mapper)
-
+        mapper.isHidden = true
+        
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }
