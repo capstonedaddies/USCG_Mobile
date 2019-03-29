@@ -136,15 +136,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         print(self.curZoom)
         
         print(mapView.camera.target)
-        let ne = mapView.cameraTargetBounds?.northEast
-        print(ne)
-        print(ne?.latitude)
-        print(ne?.longitude)
         
+        //Defining Bounds in screen with LAT and LON
+        let projection = mapView.projection.visibleRegion()
         
+        let topLeftCorner: CLLocationCoordinate2D = projection.farLeft
+        let topRightCorner: CLLocationCoordinate2D = projection.farRight
+        let bottomLeftCorner: CLLocationCoordinate2D = projection.nearLeft
+        let bottomRightCorner: CLLocationCoordinate2D = projection.nearRight
         
-        let sw = mapView.cameraTargetBounds?.southWest
-        print(sw)
         
     }
     

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "USCG_Responder/Signup/MedicalNotesViewController.swift"
+            timestampString = "575573193.590699"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "MedicalNotesViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "USCG_Responder.MedicalNotesViewController.lastName.getter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "USCG_Responder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/markvainauskas/Desktop/USCG_AUTH_EXPANDED/USCG_Mobile/USCG_Responder/Signup/MedicalNotesViewController.swift"
+                  timestampString = "575540000.959673"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "119">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "USCG_Responder.MedicalNotesViewController.lastName.setter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "USCG_Responder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/markvainauskas/Desktop/USCG_AUTH_EXPANDED/USCG_Mobile/USCG_Responder/Signup/MedicalNotesViewController.swift"
+                  timestampString = "575540000.9631571"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "USCG_Responder.MedicalNotesViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; USCG_Responder.MedicalNotesViewController"
+                  moduleName = "USCG_Responder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/markvainauskas/Desktop/USCG_AUTH_EXPANDED/USCG_Mobile/USCG_Responder/Signup/MedicalNotesViewController.swift"
+                  timestampString = "575540000.966848"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "178">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "USCG_Responder.MedicalNotesViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;USCG_Responder.MedicalNotesViewController&gt;"
+                  moduleName = "USCG_Responder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/markvainauskas/Desktop/USCG_AUTH_EXPANDED/USCG_Mobile/USCG_Responder/Signup/MedicalNotesViewController.swift"
+                  timestampString = "575540000.970703"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "147">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

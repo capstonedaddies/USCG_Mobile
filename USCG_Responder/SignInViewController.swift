@@ -19,9 +19,10 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-            noBlank.isHidden = true
-        
+        noBlank.isHidden = true
+        self.navigationItem.setHidesBackButton(true, animated: false)
     }
+    
     
     // UI ELEMENTS BEGIN
     
