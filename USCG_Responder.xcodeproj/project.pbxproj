@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		55552D8B0D7BDAAB479AFD4D /* libPods-USCG_Responder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 105E5BE17CF42F4F3097FED1 /* libPods-USCG_Responder.a */; };
+		9DF52223224DBB9200785549 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF52222224DBB9200785549 /* NameViewController.swift */; };
+		9DF52225224DBBC700785549 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF52224224DBBC700785549 /* EmailViewController.swift */; };
+		9DF52227224DBBFA00785549 /* BirthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF52226224DBBFA00785549 /* BirthViewController.swift */; };
+		9DF52229224DBC2200785549 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF52228224DBC2200785549 /* AddressViewController.swift */; };
+		9DF5222B224DBC3C00785549 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5222A224DBC3C00785549 /* EmergencyViewController.swift */; };
+		9DF5222D224DBC6A00785549 /* VesselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5222C224DBC6A00785549 /* VesselViewController.swift */; };
+		9DF5222F224DBC8200785549 /* ProfilePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5222E224DBC8200785549 /* ProfilePictureViewController.swift */; };
+		9DF52231224DBCF200785549 /* MedicalNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF52230224DBCF200785549 /* MedicalNotesViewController.swift */; };
 		BD1410CB218F627700467813 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1410CA218F627700467813 /* AppDelegate.swift */; };
 		BD1410CD218F627700467813 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1410CC218F627700467813 /* ViewController.swift */; };
 		BD1410D0218F627700467813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1410CE218F627700467813 /* Main.storyboard */; };
@@ -15,7 +23,6 @@
 		BD1410D5218F627700467813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD1410D4218F627700467813 /* Assets.xcassets */; };
 		BD1410D8218F627700467813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1410D6218F627700467813 /* LaunchScreen.storyboard */; };
 		BD22F3D522121434007F1084 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD22F3D422121434007F1084 /* SignInViewController.swift */; };
-		BD22F3D722121545007F1084 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD22F3D622121545007F1084 /* SignUpViewController.swift */; };
 		BD22F3D922124265007F1084 /* MaydayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD22F3D822124265007F1084 /* MaydayViewController.swift */; };
 		BD585EFF21AF6984004C003E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD585EFE21AF6983004C003E /* GoogleService-Info.plist */; };
 		BD585F0121AF69A1004C003E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BD585F0021AF69A1004C003E /* Podfile */; };
@@ -34,6 +41,14 @@
 		105E5BE17CF42F4F3097FED1 /* libPods-USCG_Responder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-USCG_Responder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EDCA695CEB702CAB302F2F /* Pods-USCG_Responder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USCG_Responder.release.xcconfig"; path = "Pods/Target Support Files/Pods-USCG_Responder/Pods-USCG_Responder.release.xcconfig"; sourceTree = "<group>"; };
 		94FB6715083BEF144695DBFD /* Pods-USCG_Responder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USCG_Responder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-USCG_Responder/Pods-USCG_Responder.debug.xcconfig"; sourceTree = "<group>"; };
+		9DF52222224DBB9200785549 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
+		9DF52224224DBBC700785549 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		9DF52226224DBBFA00785549 /* BirthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthViewController.swift; sourceTree = "<group>"; };
+		9DF52228224DBC2200785549 /* AddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
+		9DF5222A224DBC3C00785549 /* EmergencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
+		9DF5222C224DBC6A00785549 /* VesselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VesselViewController.swift; sourceTree = "<group>"; };
+		9DF5222E224DBC8200785549 /* ProfilePictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePictureViewController.swift; sourceTree = "<group>"; };
+		9DF52230224DBCF200785549 /* MedicalNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalNotesViewController.swift; sourceTree = "<group>"; };
 		BD1410C7218F627700467813 /* USCG_Responder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = USCG_Responder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD1410CA218F627700467813 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD1410CC218F627700467813 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,7 +58,6 @@
 		BD1410D7218F627700467813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD1410D9218F627700467813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD22F3D422121434007F1084 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		BD22F3D622121545007F1084 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BD22F3D822124265007F1084 /* MaydayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaydayViewController.swift; sourceTree = "<group>"; };
 		BD585EFE21AF6983004C003E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BD585F0021AF69A1004C003E /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -87,6 +101,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9DF52221224DBB6400785549 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				9DF52222224DBB9200785549 /* NameViewController.swift */,
+				9DF52224224DBBC700785549 /* EmailViewController.swift */,
+				9DF52226224DBBFA00785549 /* BirthViewController.swift */,
+				9DF52228224DBC2200785549 /* AddressViewController.swift */,
+				9DF5222A224DBC3C00785549 /* EmergencyViewController.swift */,
+				9DF5222C224DBC6A00785549 /* VesselViewController.swift */,
+				9DF5222E224DBC8200785549 /* ProfilePictureViewController.swift */,
+				9DF52230224DBCF200785549 /* MedicalNotesViewController.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
 		BD1410BE218F627700467813 = {
 			isa = PBXGroup;
 			children = (
@@ -109,10 +138,10 @@
 		BD1410C9218F627700467813 /* USCG_Responder */ = {
 			isa = PBXGroup;
 			children = (
+				9DF52221224DBB6400785549 /* Signup */,
 				BD1410CA218F627700467813 /* AppDelegate.swift */,
 				BD1410CC218F627700467813 /* ViewController.swift */,
 				BD22F3D422121434007F1084 /* SignInViewController.swift */,
-				BD22F3D622121545007F1084 /* SignUpViewController.swift */,
 				BD22F3D822124265007F1084 /* MaydayViewController.swift */,
 				BD63D8E6221E65550071A354 /* MapViewController.swift */,
 				BD585F0621AF81C4004C003E /* SubmitViewController.swift */,
@@ -250,16 +279,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD22F3D722121545007F1084 /* SignUpViewController.swift in Sources */,
 				BD1410CD218F627700467813 /* ViewController.swift in Sources */,
+				9DF52227224DBBFA00785549 /* BirthViewController.swift in Sources */,
 				BD585F0521AF7701004C003E /* CaseReport.swift in Sources */,
+				9DF52223224DBB9200785549 /* NameViewController.swift in Sources */,
+				9DF52225224DBBC700785549 /* EmailViewController.swift in Sources */,
 				BD1410CB218F627700467813 /* AppDelegate.swift in Sources */,
 				BD1410D3218F627700467813 /* USCG_Responder.xcdatamodeld in Sources */,
 				BD22F3D922124265007F1084 /* MaydayViewController.swift in Sources */,
 				BD63D8E7221E65550071A354 /* MapViewController.swift in Sources */,
+				9DF52229224DBC2200785549 /* AddressViewController.swift in Sources */,
 				BD8131CB2241C9A7003B929D /* EditableViewController.swift in Sources */,
 				BD585F0721AF81C4004C003E /* SubmitViewController.swift in Sources */,
+				9DF52231224DBCF200785549 /* MedicalNotesViewController.swift in Sources */,
+				9DF5222F224DBC8200785549 /* ProfilePictureViewController.swift in Sources */,
 				BD6844DE21FB952F0088CD5B /* CaseReportCell.swift in Sources */,
+				9DF5222D224DBC6A00785549 /* VesselViewController.swift in Sources */,
+				9DF5222B224DBC3C00785549 /* EmergencyViewController.swift in Sources */,
 				BD585F0A21B323FF004C003E /* RetrievalViewController.swift in Sources */,
 				BD6844DA21FB81160088CD5B /* QueryTableViewController.swift in Sources */,
 				BD22F3D522121434007F1084 /* SignInViewController.swift in Sources */,
