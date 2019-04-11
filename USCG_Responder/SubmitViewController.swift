@@ -15,6 +15,9 @@ class SubmitViewController: UIViewController, UIImagePickerControllerDelegate, U
     var photoAdded = false
     var photoURL: String = ""
     
+    var tsAscending: Double = 0.0
+    var tsDescending: Double = 0.0
+    
     let inserter = DBInt()
     let storage = Storage.storage()
 
@@ -23,23 +26,19 @@ class SubmitViewController: UIViewController, UIImagePickerControllerDelegate, U
 
         noBlankText.isHidden = true
         successText.isHidden = true
+        tsNeeded.isHidden = true
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
     // BEGIN - UI BADNESS
     
+    @IBOutlet weak var tsNeeded: UILabel!
     @IBOutlet weak var successText: UILabel!
     @IBOutlet weak var noBlankText: UILabel!
     @IBOutlet weak var idText: UITextField!
     @IBOutlet weak var subFirstText: UITextField!
     @IBOutlet weak var subLastText: UITextField!
     @IBOutlet weak var regionText: UITextField!
-    @IBOutlet weak var timestampText: UITextField!
+    @IBOutlet weak var timeStampText: UILabel!
     @IBOutlet weak var perpFirstText: UITextField!
     @IBOutlet weak var perpLastText: UITextField!
     @IBOutlet weak var perpDOBText: UITextField!
@@ -62,9 +61,6 @@ class SubmitViewController: UIViewController, UIImagePickerControllerDelegate, U
             successText.isHidden = true
             return
         }
-        noBlankText.isHidden = true
-        successText.isHidden = false
-        
         var sf:String
         if subFirstText.text == nil{
             sf = ""
@@ -86,12 +82,9 @@ class SubmitViewController: UIViewController, UIImagePickerControllerDelegate, U
         else{
              re = regionText.text!
         }
-        var ts: String
-        if timestampText.text == nil{
-            ts = ""
-        }
-        else{
-            ts = timestampText.text!
+        if timeStampText.text == "Please Generate Timestamp"{
+            tsNeeded.isHidden = false
+            return
         }
         var pf: String
         if perpFirstText.text == nil{
@@ -158,7 +151,9 @@ class SubmitViewController: UIViewController, UIImagePickerControllerDelegate, U
 
         }
         
-        let newReport = CaseReport(id: uniqueID, subFirst: sf, subLast: sl, region: re, timestamp: ts, vessel: ves, perFirst: pf, perLast: pl, DOB: pdob, citizenship: pcit, intLat: ilat, intLon: ilon, notes: note, imagePath: imgpat)
+        noBlankText.isHidden = true
+        successText.isHidden = false
+        let newReport = CaseReport(id: uniqueID, subFirst: sf, subLast: sl, region: re, timestampAscending: String(self.tsAscending), timestampDescending: String(self.tsDescending), vessel: ves, perFirst: pf, perLast: pl, DOB: pdob, citizenship: pcit, intLat: ilat, intLon: ilon, notes: note, imagePath: imgpat)
         
         inserter.addRecord(record: newReport.toAnyObject())
         
@@ -209,4 +204,32 @@ class SubmitViewController: UIViewController, UIImagePickerControllerDelegate, U
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion:nil)
     }
+    
+    @IBAction func generateTimestamp(_ sender: Any) {
+        
+        let date = Date()
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.year, .month, .day, .hour, .minute], from: date)
+        
+        let year =  components.year!%2000
+        let month = components.month!
+        let day = components.day!
+        let hour = components.hour!
+        let minute = components.minute!
+        
+        self.tsAscending = Double((year*10000)+(month*1000)+(day*100)+(hour*10)+(minute))
+        
+        self.tsDescending = Double(1000/tsAscending)
+        
+        tsNeeded.isHidden = true
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let myString = formatter.string(from: date as Date)
+        let yourDate: Date? = formatter.date(from: myString)
+        timeStampText.text = myString
+        
+    }
+    
+    
 }

@@ -14,13 +14,16 @@ class QueryTableViewController: UIViewController, UITableViewDelegate, UITableVi
     
     var passedInDicto: Dictionary<String, Dictionary<String,String>>?
     var appendInto: [Dictionary<String,String>] = []
+    var selectedRow:Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.selectedRow = 0
+        
         numResultsText.title = "Displaying \(String(describing: passedInDicto?.count)) results."
         
-        for (x,y) in passedInDicto!{
+        for (_,y) in passedInDicto!{
             appendInto.append(y)
         }
         
@@ -43,5 +46,19 @@ class QueryTableViewController: UIViewController, UITableViewDelegate, UITableVi
         return cell
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selectedRow = indexPath.row
+        self.performSegue(withIdentifier: "cellToEditor", sender: self)
+    }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "cellToEditor"{
+            let destination = segue.destination as! EditorViewController
+            destination.mainDic = self.appendInto[self.selectedRow]
+        }
+    }
+    
+    @IBAction func unwindToQueryTable(_ sender: UIStoryboardSegue){
+        
+    }
 }
