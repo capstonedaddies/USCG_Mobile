@@ -11,7 +11,7 @@ import Firebase
 
 class EditableViewController: UIViewController {
     
-    var mainDic = Dictionary<String,String>()
+    var mainDic = Dictionary<String,Any>()
     
     // Seriously, this needs to stop.
     @IBOutlet weak var idField: UITextField!
@@ -33,25 +33,22 @@ class EditableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.idField.text = mainDic["id"]
-        self.subFirstField.text = mainDic["perFirst"]
-        self.subLastField.text = mainDic["perLast"]
-        self.citField.text = mainDic["citizenship"]
-        self.dobField.text = mainDic["DOB"]
-        self.vesselField.text = mainDic["vessel"]
-        self.regionField.text = mainDic["region"]
-        self.latField.text = mainDic["intLat"]
-        self.lonField.text = mainDic["intLon"]
-        self.tsField.text = mainDic["timestampAscending"]
-        self.mitFirstField.text = mainDic["subFirst"]
-        self.mitLastField.text = mainDic["subLast"]
-        self.notedView.text = mainDic["notes"]
+        self.idField.text = mainDic["id"] as! String
+        self.subFirstField.text = mainDic["perFirst"] as! String
+        self.subLastField.text = mainDic["perLast"] as! String
+        self.citField.text = mainDic["citizenship"] as! String
+        self.dobField.text = mainDic["DOB"] as! String
+        self.vesselField.text = mainDic["vessel"] as! String
+        self.regionField.text = mainDic["region"] as! String
+        self.latField.text = mainDic["intLat"] as! String
+        self.lonField.text = mainDic["intLon"] as! String
+        self.tsField.text = mainDic["timestampAscending"] as! String
+        self.mitFirstField.text = mainDic["subFirst"] as! String
+        self.mitLastField.text = mainDic["subLast"] as! String
+        self.notedView.text = mainDic["notes"] as! String
     }
 
     
-    @IBAction func returnButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: "unwindToEditor", sender: self)
-    }
     @IBAction func saveButtonPressed(_ sender: Any) {
          let ref: DatabaseReference = Database.database().reference(withPath: "case_reports")
         

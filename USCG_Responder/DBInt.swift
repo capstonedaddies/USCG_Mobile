@@ -15,14 +15,21 @@ import Firebase
 class DBInt {
     
     // start up that DB, BB
-    var ref: DatabaseReference = Database.database().reference(withPath: "case_reports")
+    var crRef: DatabaseReference = Database.database().reference(withPath: "case_reports")
+    var nerRef: DatabaseReference = Database.database().reference(withPath: "non_emergency_reports")
+    var userRef: DatabaseReference = Database.database().reference(withPath: "user_locations")
     
     init() {
         
     }
     
     func addRecord (record: Dictionary<String, String>){
-        let idref = ref.child(record["id"]!)
+        let idref = crRef.child(record["id"]!)
+        idref.setValue(record)
+    }
+    
+    func addNERRecord(record: Dictionary<String, Any>){
+        let idref = nerRef.child(record["id"]! as! String)
         idref.setValue(record)
     }
     

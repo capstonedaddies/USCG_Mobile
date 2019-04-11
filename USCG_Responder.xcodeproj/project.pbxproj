@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		55552D8B0D7BDAAB479AFD4D /* libPods-USCG_Responder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 105E5BE17CF42F4F3097FED1 /* libPods-USCG_Responder.a */; };
+		9D7E80B72254203A003D77C6 /* NonEmergencyReports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E80B622542039003D77C6 /* NonEmergencyReports.swift */; };
+		9D7E80BB225440DE003D77C6 /* NEREditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E80BA225440DE003D77C6 /* NEREditorViewController.swift */; };
+		9D7E80BD22544117003D77C6 /* NEREditableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E80BC22544117003D77C6 /* NEREditableViewController.swift */; };
+		9D7E80C2225C452E003D77C6 /* ProfileManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E80C1225C452E003D77C6 /* ProfileManagement.swift */; };
+		9D7E80C4225D1B34003D77C6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E80C3225D1B34003D77C6 /* User.swift */; };
 		9DF52223224DBB9200785549 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF52222224DBB9200785549 /* NameViewController.swift */; };
 		9DF52225224DBBC700785549 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF52224224DBBC700785549 /* EmailViewController.swift */; };
 		9DF52227224DBBFA00785549 /* BirthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF52226224DBBFA00785549 /* BirthViewController.swift */; };
@@ -16,6 +21,9 @@
 		9DF5222D224DBC6A00785549 /* VesselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5222C224DBC6A00785549 /* VesselViewController.swift */; };
 		9DF5222F224DBC8200785549 /* ProfilePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5222E224DBC8200785549 /* ProfilePictureViewController.swift */; };
 		9DF52231224DBCF200785549 /* MedicalNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF52230224DBCF200785549 /* MedicalNotesViewController.swift */; };
+		9DF52233224EC55100785549 /* MapMarkerWindowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DF52232224EC55100785549 /* MapMarkerWindowView.xib */; };
+		9DF52235224ECDC200785549 /* MapMarkerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF52234224ECDC200785549 /* MapMarkerDelegate.swift */; };
+		9DF522372252F18400785549 /* NonEmergencyRetrievalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF522362252F18400785549 /* NonEmergencyRetrievalViewController.swift */; };
 		BD1410CB218F627700467813 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1410CA218F627700467813 /* AppDelegate.swift */; };
 		BD1410CD218F627700467813 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1410CC218F627700467813 /* ViewController.swift */; };
 		BD1410D0218F627700467813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1410CE218F627700467813 /* Main.storyboard */; };
@@ -41,6 +49,11 @@
 		105E5BE17CF42F4F3097FED1 /* libPods-USCG_Responder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-USCG_Responder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EDCA695CEB702CAB302F2F /* Pods-USCG_Responder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USCG_Responder.release.xcconfig"; path = "Pods/Target Support Files/Pods-USCG_Responder/Pods-USCG_Responder.release.xcconfig"; sourceTree = "<group>"; };
 		94FB6715083BEF144695DBFD /* Pods-USCG_Responder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USCG_Responder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-USCG_Responder/Pods-USCG_Responder.debug.xcconfig"; sourceTree = "<group>"; };
+		9D7E80B622542039003D77C6 /* NonEmergencyReports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonEmergencyReports.swift; sourceTree = "<group>"; };
+		9D7E80BA225440DE003D77C6 /* NEREditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEREditorViewController.swift; sourceTree = "<group>"; };
+		9D7E80BC22544117003D77C6 /* NEREditableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEREditableViewController.swift; sourceTree = "<group>"; };
+		9D7E80C1225C452E003D77C6 /* ProfileManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManagement.swift; sourceTree = "<group>"; };
+		9D7E80C3225D1B34003D77C6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9DF52222224DBB9200785549 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 		9DF52224224DBBC700785549 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		9DF52226224DBBFA00785549 /* BirthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +62,9 @@
 		9DF5222C224DBC6A00785549 /* VesselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VesselViewController.swift; sourceTree = "<group>"; };
 		9DF5222E224DBC8200785549 /* ProfilePictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePictureViewController.swift; sourceTree = "<group>"; };
 		9DF52230224DBCF200785549 /* MedicalNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalNotesViewController.swift; sourceTree = "<group>"; };
+		9DF52232224EC55100785549 /* MapMarkerWindowView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapMarkerWindowView.xib; sourceTree = "<group>"; };
+		9DF52234224ECDC200785549 /* MapMarkerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMarkerDelegate.swift; sourceTree = "<group>"; };
+		9DF522362252F18400785549 /* NonEmergencyRetrievalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonEmergencyRetrievalViewController.swift; sourceTree = "<group>"; };
 		BD1410C7218F627700467813 /* USCG_Responder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = USCG_Responder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD1410CA218F627700467813 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD1410CC218F627700467813 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +117,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9D7E80C0225C4512003D77C6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				9D7E80C1225C452E003D77C6 /* ProfileManagement.swift */,
+				9D7E80C3225D1B34003D77C6 /* User.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		9DF52221224DBB6400785549 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +139,34 @@
 				9DF52230224DBCF200785549 /* MedicalNotesViewController.swift */,
 			);
 			path = Signup;
+			sourceTree = "<group>";
+		};
+		9DF522382252F19F00785549 /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				BD8131C82241BCC4003B929D /* EditorViewController.swift */,
+				BD8131CA2241C9A7003B929D /* EditableViewController.swift */,
+				BD585F0621AF81C4004C003E /* SubmitViewController.swift */,
+				9DF522362252F18400785549 /* NonEmergencyRetrievalViewController.swift */,
+				BD6844D921FB81160088CD5B /* QueryTableViewController.swift */,
+				BD585F0921B323FF004C003E /* RetrievalViewController.swift */,
+				BD585F0421AF7701004C003E /* CaseReport.swift */,
+				BD6844DD21FB952F0088CD5B /* CaseReportCell.swift */,
+				9D7E80B622542039003D77C6 /* NonEmergencyReports.swift */,
+				9D7E80BA225440DE003D77C6 /* NEREditorViewController.swift */,
+				9D7E80BC22544117003D77C6 /* NEREditableViewController.swift */,
+			);
+			path = Reports;
+			sourceTree = "<group>";
+		};
+		9DF522392252F1C800785549 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				9DF52232224EC55100785549 /* MapMarkerWindowView.xib */,
+				BD63D8E6221E65550071A354 /* MapViewController.swift */,
+				9DF52234224ECDC200785549 /* MapMarkerDelegate.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		BD1410BE218F627700467813 = {
@@ -138,26 +191,21 @@
 		BD1410C9218F627700467813 /* USCG_Responder */ = {
 			isa = PBXGroup;
 			children = (
-				9DF52221224DBB6400785549 /* Signup */,
+				BD585F0221AF6DF4004C003E /* DBInt.swift */,
 				BD1410CA218F627700467813 /* AppDelegate.swift */,
 				BD1410CC218F627700467813 /* ViewController.swift */,
 				BD22F3D422121434007F1084 /* SignInViewController.swift */,
 				BD22F3D822124265007F1084 /* MaydayViewController.swift */,
-				BD63D8E6221E65550071A354 /* MapViewController.swift */,
-				BD585F0621AF81C4004C003E /* SubmitViewController.swift */,
-				BD585F0921B323FF004C003E /* RetrievalViewController.swift */,
-				BD6844D921FB81160088CD5B /* QueryTableViewController.swift */,
-				BD6844DD21FB952F0088CD5B /* CaseReportCell.swift */,
-				BD585F0421AF7701004C003E /* CaseReport.swift */,
-				BD585F0221AF6DF4004C003E /* DBInt.swift */,
+				9D7E80C0225C4512003D77C6 /* Profile */,
+				9DF522392252F1C800785549 /* Map */,
+				9DF522382252F19F00785549 /* Reports */,
+				9DF52221224DBB6400785549 /* Signup */,
 				BD1410CE218F627700467813 /* Main.storyboard */,
 				BD1410D4218F627700467813 /* Assets.xcassets */,
 				BD1410D6218F627700467813 /* LaunchScreen.storyboard */,
 				BD1410D9218F627700467813 /* Info.plist */,
 				BD1410D1218F627700467813 /* USCG_Responder.xcdatamodeld */,
 				BD585EFE21AF6983004C003E /* GoogleService-Info.plist */,
-				BD8131C82241BCC4003B929D /* EditorViewController.swift */,
-				BD8131CA2241C9A7003B929D /* EditableViewController.swift */,
 			);
 			path = USCG_Responder;
 			sourceTree = "<group>";
@@ -228,6 +276,7 @@
 				BD585EFF21AF6984004C003E /* GoogleService-Info.plist in Resources */,
 				BD1410D5218F627700467813 /* Assets.xcassets in Resources */,
 				BD1410D0218F627700467813 /* Main.storyboard in Resources */,
+				9DF52233224EC55100785549 /* MapMarkerWindowView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +329,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD1410CD218F627700467813 /* ViewController.swift in Sources */,
+				9DF52235224ECDC200785549 /* MapMarkerDelegate.swift in Sources */,
+				9D7E80B72254203A003D77C6 /* NonEmergencyReports.swift in Sources */,
 				9DF52227224DBBFA00785549 /* BirthViewController.swift in Sources */,
+				9DF522372252F18400785549 /* NonEmergencyRetrievalViewController.swift in Sources */,
 				BD585F0521AF7701004C003E /* CaseReport.swift in Sources */,
 				9DF52223224DBB9200785549 /* NameViewController.swift in Sources */,
 				9DF52225224DBBC700785549 /* EmailViewController.swift in Sources */,
+				9D7E80C4225D1B34003D77C6 /* User.swift in Sources */,
 				BD1410CB218F627700467813 /* AppDelegate.swift in Sources */,
 				BD1410D3218F627700467813 /* USCG_Responder.xcdatamodeld in Sources */,
 				BD22F3D922124265007F1084 /* MaydayViewController.swift in Sources */,
@@ -292,13 +345,16 @@
 				BD8131CB2241C9A7003B929D /* EditableViewController.swift in Sources */,
 				BD585F0721AF81C4004C003E /* SubmitViewController.swift in Sources */,
 				9DF52231224DBCF200785549 /* MedicalNotesViewController.swift in Sources */,
+				9D7E80BD22544117003D77C6 /* NEREditableViewController.swift in Sources */,
 				9DF5222F224DBC8200785549 /* ProfilePictureViewController.swift in Sources */,
 				BD6844DE21FB952F0088CD5B /* CaseReportCell.swift in Sources */,
 				9DF5222D224DBC6A00785549 /* VesselViewController.swift in Sources */,
+				9D7E80C2225C452E003D77C6 /* ProfileManagement.swift in Sources */,
 				9DF5222B224DBC3C00785549 /* EmergencyViewController.swift in Sources */,
 				BD585F0A21B323FF004C003E /* RetrievalViewController.swift in Sources */,
 				BD6844DA21FB81160088CD5B /* QueryTableViewController.swift in Sources */,
 				BD22F3D522121434007F1084 /* SignInViewController.swift in Sources */,
+				9D7E80BB225440DE003D77C6 /* NEREditorViewController.swift in Sources */,
 				BD585F0321AF6DF4004C003E /* DBInt.swift in Sources */,
 				BD8131C92241BCC4003B929D /* EditorViewController.swift in Sources */,
 			);

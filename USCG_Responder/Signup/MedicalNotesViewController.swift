@@ -99,7 +99,8 @@ class MedicalNotesViewController:UIViewController{
                                            "Photo": self.photoURL!,
                                            "Medical Notes": self.medicalNotes.text!,
                                            "lat": "0.00000",
-                                           "lon": "0.00000"] as [String : Any]
+                                           "lon": "0.00000",
+                                           "mayday": "false"] as [String : Any]
                     
                     ref.setValue(userCredentials);
                     

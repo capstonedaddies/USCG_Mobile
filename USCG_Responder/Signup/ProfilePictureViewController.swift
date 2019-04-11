@@ -34,6 +34,7 @@ class ProfilePictureViewController:UIViewController, UIImagePickerControllerDele
     @IBAction func next_button(_ sender: Any) {
         performSegue(withIdentifier: "profileimageToMedicalNotes", sender: self)
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "profileimageToMedicalNotes" {
             let controller = segue.destination as! MedicalNotesViewController

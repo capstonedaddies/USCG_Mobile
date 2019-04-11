@@ -206,4 +206,39 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         
     }
     
+    /****************MAP MARKER******************/
+    
+    
+    func loadMarkersFromDB() {
+        let userID = Auth.auth().currentUser?.uid
+        
+        let ref: DatabaseReference = Database.database().reference(withPath: "user_locations").child(userID!)
+        /*
+        ref.observe(.childAdded, with: { (snapshot) in
+            if snapshot.value as? [String : AnyObject] != nil {
+                self.mapper.clear()
+                guard let user = snapshot.value as? [String : String] else {
+                    return
+                }
+                // Get coordinate values from DB
+                let latitude = user["latitude"]
+                let longitude = user["longitude"]
+               
+                DispatchQueue.main.async(execute: {
+                    let marker = GMSMarker()
+                    // Assign custom image for each marker
+                    let markerImage = self.resizeImage(image: UIImage.init(named: "ParkSpaceLogo")!, newWidth: 30).withRenderingMode(.alwaysTemplate)
+                    let markerView = UIImageView(image: markerImage)
+                    // Customize color of marker here:
+                    markerView.tintColor = rented ? .lightGray : UIColor(hexString: "19E698")
+                    marker.iconView = markerView
+                    marker.position = CLLocationCoordinate2D(latitude: latitude as! CLLocationDegrees, longitude: longitude as! CLLocationDegrees)
+                    marker.map = self.gMapView
+                    // *IMPORTANT* Assign all the spots data to the marker's userData property
+                    marker.userData = spot
+                })
+            }
+        }, withCancel: nil)
+        */
+    }
 }

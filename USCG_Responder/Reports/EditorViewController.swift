@@ -10,7 +10,7 @@ import UIKit
 
 class EditorViewController: UIViewController {
     
-    var mainDic = Dictionary<String,String>()
+    var mainDic = Dictionary<String,Any>()
 
     // UI WORK IS GETTING SO OLD
     @IBOutlet weak var idLabel: UILabel!
@@ -38,19 +38,19 @@ class EditorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.idLabel.text = mainDic["id"]
-        self.subFirstLabel.text = mainDic["perFirst"]
-        self.subjectLastLabel.text = mainDic["perLast"]
-        self.citLabel.text = mainDic["citizenship"]
-        self.dobLabel.text = mainDic["DOB"]
-        self.vesselLabel.text = mainDic["vessel"]
-        self.regionLabel.text = mainDic["region"]
-        self.latLabel.text = mainDic["intLat"]
-        self.lonLabel.text = mainDic["intLon"]
-        self.tsLabel.text = mainDic["timestampAscending"]
-        self.mitFirstLabel.text = mainDic["subFirst"]
-        self.mitLastLabel.text = mainDic["subLast"]
-        self.notesView.text = mainDic["notes"]
+        self.idLabel.text = (mainDic["id"] as! String)
+        self.subFirstLabel.text = (mainDic["perFirst"] as! String)
+        self.subjectLastLabel.text = (mainDic["perLast"] as! String)
+        self.citLabel.text = (mainDic["citizenship"] as! String)
+        self.dobLabel.text = (mainDic["DOB"] as! String)
+        self.vesselLabel.text = (mainDic["vessel"] as! String)
+        self.regionLabel.text = (mainDic["region"] as! String)
+        self.latLabel.text = (mainDic["intLat"] as! String)
+        self.lonLabel.text = (mainDic["intLon"] as! String)
+        self.tsLabel.text = (mainDic["timestampAscending"] as! String)
+        self.mitFirstLabel.text = (mainDic["subFirst"] as! String)
+        self.mitLastLabel.text = (mainDic["subLast"] as! String)
+        self.notesView.text = (mainDic["notes"] as! String)
     }
 
     @IBAction func editButtonPressed(_ sender: Any) {
@@ -63,15 +63,6 @@ class EditorViewController: UIViewController {
             destination.mainDic = self.mainDic
         }
     }
-    
-    @IBAction func unwindToEditor(_ sender: UIStoryboardSegue){
-        
-    }
-    
-    @IBAction func returnButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: "unwindToQueryTable", sender: self)
-    }
-    
 
     /*
     // MARK: - Navigation

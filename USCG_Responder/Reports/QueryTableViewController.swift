@@ -12,9 +12,10 @@ class QueryTableViewController: UIViewController, UITableViewDelegate, UITableVi
 
     @IBOutlet weak var numResultsText: UINavigationItem!
     
-    var passedInDicto: Dictionary<String, Dictionary<String,String>>?
-    var appendInto: [Dictionary<String,String>] = []
+    var passedInDicto: Dictionary<String, Dictionary<String,Any>>?
+    var appendInto: [Dictionary<String,Any>] = []
     var selectedRow:Int = 0
+    var isCaseReport:Bool = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,18 +43,27 @@ class QueryTableViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CaseReportCell", for: indexPath) as! CaseReportCell
-        cell.fillCell(report:appendInto[indexPath.row])
+        cell.fillCell(report:appendInto[indexPath.row], isCaseReport: self.isCaseReport)
         return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         self.selectedRow = indexPath.row
-        self.performSegue(withIdentifier: "cellToEditor", sender: self)
+        if isCaseReport{
+            self.performSegue(withIdentifier: "cellToEditor", sender: self)
+        }else{
+            self.performSegue(withIdentifier: "resultsToNERView", sender: self)
+        }
     }
+    
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "cellToEditor"{
+        if segue.identifier == "cellToEditor" && isCaseReport{
             let destination = segue.destination as! EditorViewController
+            destination.mainDic = self.appendInto[self.selectedRow]
+        }else if segue.identifier == "resultsToNERView" && !isCaseReport{
+            let destination = segue.destination as! NEREditorViewController
             destination.mainDic = self.appendInto[self.selectedRow]
         }
     }
