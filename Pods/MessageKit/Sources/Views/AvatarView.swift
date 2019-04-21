@@ -96,9 +96,8 @@ open class AvatarView: UIImageView {
 
         //// Text Drawing
         let textRect = calculateTextRect(outerViewWidth: width, outerViewHeight: height)
-        let initialsText = NSAttributedString(string: initials, attributes: [.font: font])
         if adjustsFontSizeToFitWidth,
-            initialsText.width(considering: textRect.height) > textRect.width {
+            initials.width(considering: textRect.height, and: font) > textRect.width {
             let newFontSize = calculateFontSize(text: initials, font: font, width: textRect.width, height: textRect.height)
             font = placeholderFont.withSize(newFontSize)
         }
@@ -120,8 +119,7 @@ open class AvatarView: UIImageView {
      Recursively find the biggest size to fit the text with a given width and height
      */
     private func calculateFontSize(text: String, font: UIFont, width: CGFloat, height: CGFloat) -> CGFloat {
-        let attributedText = NSAttributedString(string: text, attributes: [.font: font])
-        if attributedText.width(considering: height) > width {
+        if text.width(considering: height, and: font) > width {
             let newFont = font.withSize(font.pointSize - 1)
             if newFont.pointSize > minimumFontSize {
                 return font.pointSize

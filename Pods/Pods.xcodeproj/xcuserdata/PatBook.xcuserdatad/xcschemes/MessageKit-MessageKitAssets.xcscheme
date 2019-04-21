@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BE21518D87F210FB748A77DD32D61AF4"
+               BlueprintIdentifier = "8A642ED58A30A64902100D15428C345A"
                BuildableName = "MessageKitAssets.bundle"
                BlueprintName = "MessageKit-MessageKitAssets"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BE21518D87F210FB748A77DD32D61AF4"
+            BlueprintIdentifier = "8A642ED58A30A64902100D15428C345A"
             BuildableName = "MessageKitAssets.bundle"
             BlueprintName = "MessageKit-MessageKitAssets"
             ReferencedContainer = "container:Pods.xcodeproj">

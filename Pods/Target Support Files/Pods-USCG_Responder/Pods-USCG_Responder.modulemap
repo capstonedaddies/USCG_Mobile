@@ -1,6 +1,0 @@
-module Pods_USCG_Responder {
-  umbrella header "Pods-USCG_Responder-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -25,65 +25,43 @@
 import UIKit
 
 /// The layout attributes used by a `MessageCollectionViewCell` to layout its subviews.
-open class MessagesCollectionViewLayoutAttributes: UICollectionViewLayoutAttributes {
+final class MessagesCollectionViewLayoutAttributes: UICollectionViewLayoutAttributes {
 
     // MARK: - Properties
 
-    public var avatarSize: CGSize = .zero
-    public var avatarPosition = AvatarPosition(vertical: .cellBottom)
+    var avatarFrame: CGRect = .zero
 
-    public var messageContainerSize: CGSize = .zero
-    public var messageContainerPadding: UIEdgeInsets = .zero
-    public var messageLabelFont: UIFont = UIFont.preferredFont(forTextStyle: .body)
-    public var messageLabelInsets: UIEdgeInsets = .zero
+    var messageLabelFont: UIFont = UIFont.preferredFont(forTextStyle: .body)
+    var messageContainerFrame: CGRect = .zero
+    var messageLabelInsets: UIEdgeInsets = .zero
 
-    public var cellTopLabelAlignment = LabelAlignment(textAlignment: .center, textInsets: .zero)
-    public var cellTopLabelSize: CGSize = .zero
-    
-    public var messageTopLabelAlignment = LabelAlignment(textAlignment: .center, textInsets: .zero)
-    public var messageTopLabelSize: CGSize = .zero
-
-    public var messageBottomLabelAlignment = LabelAlignment(textAlignment: .center, textInsets: .zero)
-    public var messageBottomLabelSize: CGSize = .zero
+    var topLabelFrame: CGRect = .zero
+    var bottomLabelFrame: CGRect = .zero
 
     // MARK: - Methods
 
-    open override func copy(with zone: NSZone? = nil) -> Any {
+    override func copy(with zone: NSZone? = nil) -> Any {
         // swiftlint:disable force_cast
         let copy = super.copy(with: zone) as! MessagesCollectionViewLayoutAttributes
-        copy.avatarSize = avatarSize
-        copy.avatarPosition = avatarPosition
-        copy.messageContainerSize = messageContainerSize
-        copy.messageContainerPadding = messageContainerPadding
+        copy.avatarFrame = avatarFrame
+        copy.messageContainerFrame = messageContainerFrame
         copy.messageLabelFont = messageLabelFont
         copy.messageLabelInsets = messageLabelInsets
-        copy.cellTopLabelAlignment = cellTopLabelAlignment
-        copy.cellTopLabelSize = cellTopLabelSize
-        copy.messageTopLabelAlignment = messageTopLabelAlignment
-        copy.messageTopLabelSize = messageTopLabelSize
-        copy.messageBottomLabelAlignment = messageBottomLabelAlignment
-        copy.messageBottomLabelSize = messageBottomLabelSize
+        copy.topLabelFrame = topLabelFrame
+        copy.bottomLabelFrame = bottomLabelFrame
         return copy
         // swiftlint:enable force_cast
     }
 
-    open override func isEqual(_ object: Any?) -> Bool {
+    override func isEqual(_ object: Any?) -> Bool {
+
         // MARK: - LEAVE this as is
-        if let attributes = object as? MessagesCollectionViewLayoutAttributes {
-            return super.isEqual(object) && attributes.avatarSize == avatarSize
-                && attributes.avatarPosition == attributes.avatarPosition
-                && attributes.messageContainerSize == messageContainerSize
-                && attributes.messageContainerPadding == messageContainerPadding
-                && attributes.messageLabelFont == messageLabelFont
-                && attributes.messageLabelInsets == messageLabelInsets
-                && attributes.cellTopLabelAlignment == cellTopLabelAlignment
-                && attributes.cellTopLabelSize == cellTopLabelSize
-                && attributes.messageTopLabelAlignment == messageTopLabelAlignment
-                && attributes.messageTopLabelSize == messageTopLabelSize
-                && attributes.messageBottomLabelAlignment == messageBottomLabelAlignment
-                && attributes.messageBottomLabelSize == messageBottomLabelSize
+        // swiftlint:disable unused_optional_binding
+        if let _ = object as? MessagesCollectionViewLayoutAttributes {
+            return super.isEqual(object)
         } else {
             return false
         }
+        // swiftlint:enable unused_optional_binding
     }
 }
