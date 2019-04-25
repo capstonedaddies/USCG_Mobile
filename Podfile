@@ -2,7 +2,7 @@ platform :ios, "11.0"
 use_frameworks!
 inhibit_all_warnings!
 
-target 'RWRC' do
+target 'USCG_Responder' do
   pod 'GoogleMaps'
   pod 'MessageKit'
   pod 'Firebase/Core'
